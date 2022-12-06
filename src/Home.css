@@ -1,0 +1,10 @@
+.color-link {
+	display: block;
+	text-decoration: none;
+}
+
+.add-color-section {
+	background-color: powderblue;
+	height: 30vh;
+	padding-top: 10vh;
+}
