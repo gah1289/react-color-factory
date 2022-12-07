@@ -6,6 +6,7 @@ import './Home.css';
 
 function AddColorForm({ addColor }) {
 	const navigate = useNavigate();
+	// useNavigate is a hook. You have to use this if you're using js. You can use <Navigate /> inside the return because its JSX
 	const [
 		formData,
 		setFormData

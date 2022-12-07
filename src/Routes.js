@@ -2,7 +2,7 @@ import { Route, Routes, Navigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 import Home from './Home';
-
+import RedirectToColors from './RedirectToColors';
 import ColorPage from './ColorPage';
 import AddColorForm from './AddColorForm';
 function MyRoutes() {
@@ -34,6 +34,7 @@ function MyRoutes() {
 
 	return (
 		<Routes>
+			<Route index element={<RedirectToColors />} />
 			<Route path="/colors" exact="true" element={<Home />} />
 			<Route path="colors/add" exact="true" element={<AddColorForm addColor={addColor} />} />
 			<Route path="colors/:color" exact="true" element={<ColorPage />} />
